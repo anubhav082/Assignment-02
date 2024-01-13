@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="./reg_style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"><img src="vw.jpg" width="40" height="40" class="d-inline-block align-top" alt="Your Logo">
+            Volkswagen</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./profile.html">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./mentor.html">Mentor</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./gallery/index.html">Gallery</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./ludo/index.html">Gamification</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./registration.html">Registration</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./assignment.html">Assignment</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./logout.html">Logout</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    
+    <div class="header">
+        <h1>Welcome to Registration Page</h1>
+    </div>
+    <div class="content-container">
+        <div class="left-section">
+            
+            <img src="seminar.jpg" alt="Seminar Image">
+        </div>
+        <div class="right-section">
+            <form action="/process-registration" method="post">
+                <h2>Seminar Registration</h2>
+                
+                    
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                
+                    
+                    <label for="seminar">Select Seminar:</label>
+                    <select id="seminar" name="seminar" required>
+                        <option value="CPP Seminar">CPP Seminar</option>
+                        <option value="Python Seminar">Python Seminar</option>
+                        <option value="Java Seminar">Java Seminar</option>
+                        <option value="Web Development Seminar">Web Development Seminar</option>
+                        <option value="Andriod Development Seminar">Andriod Development Seminar</option>
+                        <option value="Block Chain Seminar">Block Chain Seminar</option>
+                        
+                    </select>
+                
+                    <label for="attendee-type">Attendee Type:</label>
+                    <select id="attendee-type" name="attendee-type" required>
+                        <option value="student">Student</option>
+                        <option value="professional">Professional</option>
+                      
+                    </select>
+                
+                
+                    <label for="comments">Comments:</label>
+                    <textarea id="comments" name="comments" rows="4"></textarea>
+                
+                    <button type="submit">Register</button>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>

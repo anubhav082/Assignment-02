@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Page</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="assign_style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"><img src="vw.jpg" width="40" height="40" class="d-inline-block align-top" alt="Your Logo"> Volkswagen</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./profile.html">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./mentor.html">Mentor</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./gallery/index.html">Gallery</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./ludo/index.html">Gamification</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./registration.html">Registration</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./assignment.html">Assignment</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./logout.html">Logout</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+    <div class="welcome-section">
+        <h1>Welcome to Your Assignment Page</h1>
+        <p>We are excited to have you here! Explore your assignments and opportunities.</p>
+    </div>
+
+    <form action="/submit-details" method="post">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="details-section">
+                        <h2>Personal Details</h2>
+                        <label for="fullName">Full Name:</label>
+                        <input type="text" id="fullName" name="fullName" class="form-control" required>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+
+                        <label for="contactNo">Contact No:</label>
+                        <input type="tel" id="contactNo" name="contactNo" class="form-control" required>
+                    </div>
+
+                    <div class="details-section">
+                        <h2>Assignment Details</h2>
+                        <label for="assignmentTitle">Title:</label>
+                        <input type="text" id="assignmentTitle" name="assignmentTitle" class="form-control" required>
+
+                        <label for="assignmentDescription">Description:</label>
+                        <textarea id="assignmentDescription" name="assignmentDescription" class="form-control" rows="4" required></textarea>
+
+                        <label for="assignmentWords">Words:</label>
+                        <input type="number" id="assignmentWords" name="assignmentWords" class="form-control" required>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="box-area">
+                        <h3>Offers</h3>
+                        <p>Offer 1: Get a 10% discount on your next assignment submission.</p>
+                        <p>Offer 2: Enroll in our premium membership and receive personalized mentorship.</p>
+                        <p>Offer 3: Refer a friend and both of you will receive special bonuses.</p>
+                        <p>Offer 4: Complete three assignments in a month and earn a certificate of achievement.</p>
+                        <p>Offer 5: Participate in our exclusive webinar series for free as a valued member.</p>
+                        <p>Offer 6: Join our community forums and connect with like-minded individuals worldwide.</p>
+                        <p>Offer 7: Receive early access to upcoming assignments and projects.</p>
+                        <p>Offer 8: Win exciting prizes by submitting the most innovative assignment of the month.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="deadline-section">
+                <h2>Deadline and Timezone</h2>
+                <label for="deadline">Deadline:</label>
+                <input type="datetime-local" id="deadline" name="deadline" class="form-control" required>
+
+                <label for="timezone">Timezone:</label>
+                <select id="timezone" name="timezone" class="form-control" required>
+                    <option value="timezone1">Timezone 1</option>
+                    <option value="timezone2">Timezone 2</option>
+                    <!-- Add more timezones as needed -->
+                </select>
+
+                <!-- Submit Button -->
+                <button class="submit-button" type="submit">Submit</button>
+            </div>
+        </div>
+    </form>
+
+</body>
+</html>

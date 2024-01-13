@@ -1,0 +1,36 @@
+#c1 {
+    background-color: #2ecc71; /* Shade of green (you can adjust the color code) */
+    padding: 20px; /* Add padding for better spacing */
+    color: white; /* Text color */
+  }
+  
+h1, h2 {
+    font-weight: bold; /* Make the text bold */
+    color: white; /* Text color */
+  }
+
+  .container {
+    margin-top: 20px;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .col-md-4 {
+    background-color: #f4d03f; /* Formal shade of yellow */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+  }
+  
+  .col-md-4 img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .col-md-4 h3 {
+    color: #333; /* Text color for headings */
+  }
+  

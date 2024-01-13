@@ -1,0 +1,59 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.welcome-section {
+    text-align: center;
+    padding: 30px;
+    background-color: #343a40;
+    color: #fff;
+}
+
+.details-section,
+.offers-section,
+.deadline-section {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.details-section h2,
+.offers-section h2,
+.deadline-section h2 {
+    color: #343a40;
+}
+
+.details-section label,
+.deadline-section label {
+    color: #343a40;
+}
+
+.box-area {
+    max-width: 100%;
+    margin: 20px auto;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.box-area h3 {
+    color: #343a40;
+}
+
+.submit-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
